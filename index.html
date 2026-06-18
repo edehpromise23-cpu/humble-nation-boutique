@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Humble Nation Signature Boutique & Collection</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== Top Bar ===== -->
+<div class="topbar">
+  <div class="topbar-inner">
+    <a href="#top" class="brandmark">
+      <img src="https://i.imgur.com/Oi77zzC.jpeg" alt="Humble Nation crest">
+      <div class="brandmark-text">Humble Nation
+        <span>SIGNATURE BOUTIQUE</span>
+      </div>
+    </a>
+    <nav class="primary" id="primaryNav">
+      <a href="#collection">Collection</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <a href="https://wa.me/2349014951400" class="nav-cta" target="_blank" rel="noopener">Order on WhatsApp</a>
+    </nav>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
+  </div>
+</div>
+
+<!-- ===== Hero ===== -->
+<section class="hero" id="top">
+  <div class="hero-content">
+    <img src="https://i.imgur.com/Oi77zzC.jpeg" alt="Humble Nation crest" class="hero-crest">
+    <p class="eyebrow hero-eyebrow">Est. for the Modern Lifestyle</p>
+    <h1 class="hero-title">Premium Fashion,<br><em>Worn with Purpose.</em></h1>
+    <p class="hero-sub">Curated polos, denim, joggers and statement tees for those who dress with intention. Browse the collection below and order directly on WhatsApp.</p>
+    <div class="hero-actions">
+      <a href="#collection" class="btn btn-gold">View Collection</a>
+      <a href="https://wa.me/2349014951400" class="btn btn-outline" target="_blank" rel="noopener">Chat to Order</a>
+    </div>
+  </div>
+  <div class="hero-scroll"><div class="line"></div>SCROLL</div>
+</section>
+
+<!-- ===== Collection ===== -->
+<section id="collection">
+  <div class="section-head">
+    <p class="eyebrow">The Collection</p>
+    <h2>Pieces Worth Repeating</h2>
+    <p>Every item below is in stock and ready to ship. Tap "Order" on any piece to message us directly.</p>
+  </div>
+
+  <div class="cat-strip">
+    <button class="cat-chip active" data-filter="all">All</button>
+    <button class="cat-chip" data-filter="polo">Polos</button>
+    <button class="cat-chip" data-filter="tee">Tees</button>
+    <button class="cat-chip" data-filter="denim">Denim</button>
+    <button class="cat-chip" data-filter="bottoms">Joggers & Trousers</button>
+  </div>
+
+  <div class="grid" id="productGrid">
+
+    <div class="card" data-cat="bottoms">
+      <div class="card-frame"><span class="card-tag">New In</span><img src="https://i.imgur.com/Quo24P5.jpeg" alt="Striped track pants, five colourways" class="zoomable" onclick="openLightbox(this.src, this.alt)"></div>
+      <div class="card-body">
+        <p class="card-cat">Joggers</p>
+        <h3 class="card-title">Striped Track Pants</h3>
+        <div class="card-foot"><span class="card-price">Available in 5 colours</span><a class="card-order" href="https://wa.me/2349014951400" target="_blank" rel="noopener">Order →</a></div>
+      </div>
+    </div>
+
+    <div class="card" data-cat="bottoms">
+      <div class="card-frame"><span class="card-tag">New In</span><img src="https://i.imgur.com/GtzYf0q.jpeg" alt="Curved seam joggers, three colourways" class="zoomable" onclick="openLightbox(this.src, this.alt)"></div>
+      <div class="card-body">
+        <p class="card-cat">Joggers</p>
+        <h3 class="card-title">Curved Seam Joggers</h3>
+        <div class="card-foot"><span class="card-price">Available in 5 colours</span><a class="card-order" href="https://wa.me/2349014951400" target="_blank" rel="noopener">Order →</a></div>
+      </div>
+    </div>
+
+    <div class="card" data-cat="polo">
+      <div class="card-frame"><img src="https://i.imgur.com/lzk7ReN.jpeg" alt="Classic fit polo shirt in burnt orange" class="zoomable" onclick="openLightbox(this.src, this.alt)"></div>
+      <div class="card-body">
+        <p class="card-cat">Polos</p>
+        <h3 class="card-title">Classic Fit Polo</h3>
+        <div class="card-foot"><span class="card-price">Burnt orange</span><a class="card-order" href="https://wa.me/2349014951400" target="_blank" rel="noopener">Order →</a></div>
+      </div>
+    </div>
+
+    <div class="card" data-cat="tee">
+      <div class="card-frame"><img src="https://i.imgur.com/OoFwu8f.jpeg" alt="Embossed pattern oversized tee in white" class="zoomable" onclick="openLightbox(this.src, this.alt)"></div>
+      <div class="card-body">
+        <p class="card-cat">Tees</p>
+        <h3 class="card-title">Embossed Pattern Tee</h3>
+        <div class="card-foot"><span class="card-price">Oversized fit</span><a class="card-order" href="https://wa.me/2349014951400" target="_blank" rel="noopener">Order →</a></div>
+      </div>
+    </div>
+
+    <div class="card" data-cat="tee">
+      <div class="card-frame"><img src="https://i.imgur.com/36JKQqb.jpeg" alt="Bold lettering graphic tee with shoulder stripe detail" class="zoomable" onclick="openLightbox(this.src, this.alt)"></div>
+      <div class="card-body">
+        <p class="card-cat">Tees</p>
+        <h3 class="card-title">Bold Lettering Tee</h3>
+        <div class="card-foot"><span class="card-price">Oversized fit</span><a class="card-order" href="https://wa.me/2349014951400" target="_blank" rel="noopener">Order →</a></div>
+      </div>
+    </div>
+
+    <div class="card" data-cat="tee">
+      <div class="card-frame"><img src="https://i.imgur.com/Mjyt5S2.jpeg" alt="Marble swirl print tee in six colours" class="zoomable" onclick="openLightbox(this.src, this.alt)"></div>
+      <div class="card-body">
+        <p class="card-cat">Tees</p>
+        <h3 class="card-title">Marble Swirl Tee</h3>
+        <div class="card-foot"><span class="card-price">Available in 6 colours</span><a class="card-order" href="https://wa.me/2349014951400" target="_blank" rel="noopener">Order →</a></div>
+      </div>
+    </div>
+
+    <div class="card" data-cat="denim">
+      <div class="card-frame"><span class="card-tag">New In</span><img src="https://i.imgur.com/ccTAxIT.jpeg" alt="Dark wash distressed skinny denim jeans" class="zoomable" onclick="openLightbox(this.src, this.alt)"></div>
+      <div class="card-body">
+        <p class="card-cat">Denim</p>
+        <h3 class="card-title">Dark Wash Distressed Denim</h3>
+        <div class="card-foot"><span class="card-price">Skinny fit</span><a class="card-order" href="https://wa.me/2349014951400" target="_blank" rel="noopener">Order →</a></div>
+      </div>
+    </div>
+
+    <div class="card" data-cat="denim">
+      <div class="card-frame"><img src="https://i.imgur.com/4rbDVhf.jpeg" alt="Yellow wash distressed denim jeans" class="zoomable" onclick="openLightbox(this.src, this.alt)"></div>
+      <div class="card-body">
+        <p class="card-cat">Denim</p>
+        <h3 class="card-title">Yellow Wash Distressed Denim</h3>
+        <div class="card-foot"><span class="card-price">Slim fit</span><a class="card-order" href="https://wa.me/2349014951400" target="_blank" rel="noopener">Order →</a></div>
+      </div>
+    </div>
+
+    <div class="card" data-cat="tee">
+      <div class="card-frame"><img src="https://i.imgur.com/R9WKH3p.jpeg" alt="City of Love Los Angeles dice graphic tee in tan" class="zoomable" onclick="openLightbox(this.src, this.alt)"></div>
+      <div class="card-body">
+        <p class="card-cat">Tees</p>
+        <h3 class="card-title">City Dice Graphic Tee</h3>
+        <div class="card-foot"><span class="card-price">Relaxed fit</span><a class="card-order" href="https://wa.me/2349014951400" target="_blank" rel="noopener">Order →</a></div>
+      </div>
+    </div>
+
+    <div class="card" data-cat="bottoms">
+      <div class="card-frame"><span class="card-tag">New In</span><img src="https://i.imgur.com/vKD0NbI.jpeg" alt="Utility pocket cargo trousers, three colourways" class="zoomable" onclick="openLightbox(this.src, this.alt)"></div>
+      <div class="card-body">
+        <p class="card-cat">Trousers</p>
+        <h3 class="card-title">Utility Pocket Cargo Trousers</h3>
+        <div class="card-foot"><span class="card-price">Available in 3 colours</span><a class="card-order" href="https://wa.me/2349014951400" target="_blank" rel="noopener">Order →</a></div>
+      </div>
+    </div>
+
+    <div class="card" data-cat="tee">
+      <div class="card-frame"><img src="https://i.imgur.com/7xEnSMN.jpeg" alt="Motivational graphic tee, front and back print" class="zoomable" onclick="openLightbox(this.src, this.alt)"></div>
+      <div class="card-body">
+        <p class="card-cat">Tees</p>
+        <h3 class="card-title">Motivational Graphic Tee</h3>
+        <div class="card-foot"><span class="card-price">Oversized fit</span><a class="card-order" href="https://wa.me/2349014951400" target="_blank" rel="noopener">Order →</a></div>
+      </div>
+    </div>
+
+    <div class="card" data-cat="tee">
+      <div class="card-frame"><img src="https://i.imgur.com/diGpRXy.jpeg" alt="Saint Worldwide vintage graphic tee, front and back print" class="zoomable" onclick="openLightbox(this.src, this.alt)"></div>
+      <div class="card-body">
+        <p class="card-cat">Tees</p>
+        <h3 class="card-title">Vintage Rose Graphic Tee</h3>
+        <div class="card-foot"><span class="card-price">Relaxed fit</span><a class="card-order" href="https://wa.me/2349014951400" target="_blank" rel="noopener">Order →</a></div>
+      </div>
+    </div>
+
+  </div>
+  
+  <!-- ===== Lightbox ===== -->
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+  <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+  <img id="lightboxImg" src="" alt="" onclick="event.stopPropagation()">
+</div>
+</section>
+
+<!-- ===== About / Brand band ===== -->
+<div class="band" id="about">
+  <div class="band-inner">
+    <div class="band-crest"><img src="https://i.imgur.com/Oi77zzC.jpeg" alt="Humble Nation crest"></div>
+    <div class="band-copy">
+      <p class="eyebrow">Our Story</p>
+      <h3>Humility at the Top.</h3>
+      <p>Humble Nation Signature Boutique & Collection was built for people who want to look like they belong at the table without saying a word about it. We source pieces that carry themselves &mdash; polos, denim, joggers, footwear, watches and accessories &mdash; and put them in front of people who know quality on sight.</p>
+      <p>No middlemen, no guesswork. You see it, you like it, you message us, it's yours.</p>
+      <div class="band-stats">
+        <div>
+          <div class="stat-num">13+</div>
+          <div class="stat-label">Pieces In Stock</div>
+        </div>
+        <div>
+          <div class="stat-num">8</div>
+          <div class="stat-label">Categories</div>
+        </div>
+        <div>
+          <div class="stat-num">24h</div>
+          <div class="stat-label">Response Time</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== Contact ===== -->
+<section class="contact-wrap" id="contact">
+  <div class="contact-card">
+    <p class="eyebrow">Get In Touch</p>
+    <h2>Ready When You Are.</h2>
+    <p>Spotted something you like? Reach out directly &mdash; no carts, no checkout forms, just a real conversation about what you want.</p>
+    <div class="contact-methods">
+      <a class="contact-pill" href="https://wa.me/2349014951400" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.6 6.32A8.86 8.86 0 0 0 12.05 4a8.94 8.94 0 0 0-7.74 13.4L3 21l3.7-1.27a8.93 8.93 0 0 0 5.35 1.7h.01a8.92 8.92 0 0 0 8.92-8.91 8.86 8.86 0 0 0-3.38-6.2zM12.06 19.6h-.01a7.4 7.4 0 0 1-3.77-1.04l-.27-.16-2.8.96.94-2.73-.18-.28a7.42 7.42 0 0 1-1.15-3.97 7.45 7.45 0 0 1 12.7-5.27 7.38 7.38 0 0 1 2.18 5.27 7.45 7.45 0 0 1-7.44 7.42zm4.08-5.57c-.22-.11-1.32-.65-1.53-.73-.2-.07-.35-.11-.5.11-.15.22-.58.73-.71.88-.13.15-.26.16-.48.05-.22-.11-1.4-.52-2.04-1.96-.16-.27.16-.27.45-.9.05-.1.03-.19-.02-.27-.05-.08-.43-1.04-.59-1.42-.15-.37-.31-.32-.43-.32-.11-.01-.24-.01-.37-.01-.13 0-.34.05-.52.27-.18.22-.69.68-.69 1.65 0 .97.71 1.91.81 2.04.1.13 1.39 2.13 3.42 2.9 1.66.63 2 .52 2.36.49.36-.04 1.16-.47 1.32-.93.17-.46.17-.85.12-.93-.05-.08-.18-.13-.4-.24z"/></svg>
+        WhatsApp: 0901 495 1400
+      </a>
+      <a class="contact-pill" href="tel:08143938183">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24c1.12.37 2.32.57 3.55.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.23.2 2.43.57 3.55a1 1 0 0 1-.25 1.01l-2.2 2.23z"/></svg>
+        Call: 0814 393 8183
+      </a>
+      <a class="contact-pill" href="mailto:humblenationboutique@gmail.com">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5z"/></svg>
+        humblenationboutique@gmail.com
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Footer ===== -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <img src="https://i.imgur.com/Oi77zzC.jpeg" alt="Humble Nation crest">
+      <div class="footer-brand-text">Humble Nation
+        <span>SIGNATURE BOUTIQUE & COLLECTION</span>
+      </div>
+    </div>
+    <div class="footer-meta">
+      Premium Fashion for the Modern Lifestyle<br>
+      <a href="tel:08143938183">0814 393 8183</a> &nbsp;·&nbsp;
+      <a href="https://wa.me/2349014951400" target="_blank" rel="noopener">WhatsApp</a> &nbsp;·&nbsp;
+      <a href="mailto:humblenationboutique@gmail.com">Email</a>
+    </div>
+  </div>
+  <div class="footer-bottom">&copy; 2026 Humble Nation Signature Boutique & Collection. All rights reserved.</div>
+</footer>
+
+<!-- ===== Floating WhatsApp ===== -->
+<a class="float-wa" href="https://wa.me/2349014951400" target="_blank" rel="noopener">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.6 6.32A8.86 8.86 0 0 0 12.05 4a8.94 8.94 0 0 0-7.74 13.4L3 21l3.7-1.27a8.93 8.93 0 0 0 5.35 1.7h.01a8.92 8.92 0 0 0 8.92-8.91 8.86 8.86 0 0 0-3.38-6.2zM12.06 19.6h-.01a7.4 7.4 0 0 1-3.77-1.04l-.27-.16-2.8.96.94-2.73-.18-.28a7.42 7.42 0 0 1-1.15-3.97 7.45 7.45 0 0 1 12.7-5.27 7.38 7.38 0 0 1 2.18 5.27 7.45 7.45 0 0 1-7.44 7.42zm4.08-5.57c-.22-.11-1.32-.65-1.53-.73-.2-.07-.35-.11-.5.11-.15.22-.58.73-.71.88-.13.15-.26.16-.48.05-.22-.11-1.4-.52-2.04-1.96-.16-.27.16-.27.45-.9.05-.1.03-.19-.02-.27-.05-.08-.43-1.04-.59-1.42-.15-.37-.31-.32-.43-.32-.11-.01-.24-.01-.37-.01-.13 0-.34.05-.52.27-.18.22-.69.68-.69 1.65 0 .97.71 1.91.81 2.04.1.13 1.39 2.13 3.42 2.9 1.66.63 2 .52 2.36.49.36-.04 1.16-.47 1.32-.93.17-.46.17-.85.12-.93-.05-.08-.18-.13-.4-.24z"/></svg>
+  <span>Order on WhatsApp</span>
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>
